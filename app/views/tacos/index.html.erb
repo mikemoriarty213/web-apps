@@ -1,12 +1,13 @@
 <h1>buh buh</h1>
 
 <% 
-tacos = ["Carnitas","Al Pastor"]
+tacos = ["Carnitas","Al Pastor","Mushrooms","Fish"]
 %>
 
 <p>There are <%= tacos.count%> tacos:</p>
 
 <ul>
-<li>Carnitas</li>
-<li>Al Pastor</li>
+<% for taco in tacos %>
+<li><%= taco %></li>
+<% end %>
 </ul>
